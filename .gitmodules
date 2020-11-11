@@ -1,0 +1,7 @@
+[submodule "public"]
+	path = public
+	url = git@github.com:00derek/00derek.github.io.git
+	branch = master
+[submodule "themes/hello-friend-ng"]
+	path = themes/hello-friend-ng
+	url = https://github.com/rhazdon/hugo-theme-hello-friend-ng.git

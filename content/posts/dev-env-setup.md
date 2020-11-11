@@ -1,16 +1,18 @@
 ---
-title: "Dev Env Setup"
-date: 2020-09-09T11:35:41-07:00
+title: "My Python Dev Env setup"
+date: 2020-11-09T11:35:41-07:00
 draft: false
 ---
+Making a note to jot down the tools I preferred to use when setting up Python development environment -- **there should be one-- and preferably only one --obvious way to do things**
 
-# Unix Shell/Terminal/REPL/IDE
+# Terminal/REPL/IDE
 
 - zsh/oh-my-zsh [https://ohmyz.sh/](https://ohmyz.sh/)
-- iterm2
-- ipython/bpython
-    - jupyter notebook?
-- PyCharm/VSCODE
+  - plugins=(git history-substring-search zsh-autosuggestions)
+  - theme: [power10k](https://github.com/romkatv/powerlevel10k)
+- iTerm2
+- iPython/bpython
+- VsCode
 
 # Python environment management
 
@@ -38,28 +40,20 @@ draft: false
 
     5. Activate different Python versions and virtual environments automatically
     6. some useful plugins
-        - pyenv-which-ext: Plugin to automatically lookup system commands
-        - pyenv-virtualenv: Plugin for pyenv and virtual environments
-        - pyenv-update: Plugin for updating pyenv
+        - `pyenv-which-ext`: Plugin to automatically lookup system commands
+        - `pyenv-virtualenv`: Plugin for pyenv and virtual environments
+        - `pyenv-update`: Plugin for updating pyenv
 
 # Dependency management tools
-
-- pip install -r requirements.txt
-- Pipenv [https://pipenv.pypa.io/en/latest/](https://pipenv.pypa.io/en/latest/)
-    - Pipfile and Pipfile.lock
-- Poetry [https://python-poetry.org/](https://python-poetry.org/)
+- Preferred: [Poetry](https://python-poetry.org/)
     - pyproject.toml and poetry.lock
+- pip install -r requirements.txt
+- [Pipenv](https://pipenv.pypa.io/en/latest/)
+    - Pipfile and Pipfile.lock
 
-# Working on data management repo
-
-**There should be one-- and preferably only one --obvious way to do things**
-
-- [https://github.com/Exabeam/docker-exabeam-dl-data-management](https://github.com/Exabeam/docker-exabeam-dl-data-management)
-    - linters: flake8 and black
-        - Codes are read much longer time than being written
-        - This style guide exists for consistency
-    - pytest
-- pre-commit — [https://pre-commit.com/](https://pre-commit.com/)
+# Linting tools
+- Codes are read much longer time than being written       
+- [pre-commit](https://pre-commit.com/)
 
 ```jsx
 repos:
@@ -84,15 +78,4 @@ repos:
     rev: master
     hooks:
     -   id: flake8
-```
-
-- post-commit — adding versionbump
-
-```jsx
-#!/bin/sh
-if [ ! -e versionbump ]
-then
-    echo "patch" > versionbump
-    git add versionbump
-    git commit --amend --no-edit --no-verify
 ```

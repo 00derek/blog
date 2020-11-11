@@ -1,75 +1,97 @@
-baseURL = "https://example.com"
-languageCode = "en"
-DefaultContentLanguage = "en"
-title = "Website of Derek Chang"
-theme = "anatole"
-summarylength = 10
-enableEmoji = true
-enableRobotsTXT = true
-
-# Enable Disqus
-#disqusShortname = ""
-
-# Google Analytics
-#googleAnalytics = "UA-123-45"
+baseurl      = "https://00derek.github.io"
+title        = "My Blog"
+languageCode = "en-us"
+theme        = "hello-friend-ng"
+paginate     = 10
 
 [params]
-title = "Random notes"
-author = "Derek Chang"
-description = "I haven't given it a lot of thoughts yet"
-profilePicture = "images/profile.jpg"
-keywords = ""
-favicon = "favicons/"
-customCss = []
-customJs = []
-mainSections = ["posts"]
-images = ["images/site-feature-image.png"]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
 
-## Math settings
-[params.math]
-enable = false  # options: true, false. Enable math support globally, default: false. You can always enable math on per page.
-use = "katex"  # options: "katex", "mathjax". default is "katex".
+  # Subtitle for home
+  homeSubtitle = "Software Engineer // Voracious reader"
 
-## Social links
-[[params.socialIcons]]
-icon = "fa-linkedin"
-title = "Linkedin"
-url = "www.linkedin.com/in/chihweichang"
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
 
-[[params.socialIcons]]
-icon = "fa-github"
-title = "GitHub"
-# url = "https://github.com/00derek"
-url = "https://github.com/derek-chang-exa"
+  # Enable sharing buttons, if you linke
+  enableSharingButtons = true
 
-[[params.socialIcons]]
-icon = "fa-instagram"
-title = "instagram"
-url = "https://www.instagram.com/"
+  # Metadata mostly used in document's head
+  description = "My new homepage or blog"
+  keywords = "homepage, blog"
+  images = [""]
 
-[[params.socialIcons]]
-icon = "fa-envelope"
-title = "e-mail"
-url = "mailto:mail@alexbilz.com"
+  # Default theme "light" or "dark"
+  defaultTheme = "dark"
 
-## Menu items
+   # Custom footer 
+  # If you want, you can easily override the default footer with your own content. 
+  #
+  # footerLeft = "Powered by <a href=\"http://gohugo.io\">Hugo</a>"
+  # footerRight = "Made with &#10084; by <a href=\"https://github.com/rhazdon\">Djordje Atlialp</a>"
 
-[menu]
+  # Colors for favicons
+  #
+  [params.favicon.color]
+    mask = "#252627"
+    msapplication = "#252627"
+    theme = "#252627"
 
+  [params.portrait]
+    path     = "images/profile.jpg"
+    alt      = "Portrait"
+    maxWidth = "240px"
+
+    # Social icons
+  [[params.social]]
+    name = "twitter"
+    url  = "https://twitter.com/derek0627"
+
+  [[params.social]]
+    name = "email"
+    url  = "mailto:derekchang@live.com"
+
+  [[params.social]]
+    name = "github"
+    # url = "https://github.com/00derek"
+    url = "https://github.com/derek-chang-exa"
+
+  [[params.social]]
+    name = "linkedin"
+    url  = "https://www.linkedin.com/in/chihweichang"
+
+
+[taxonomies]
+    category = "blog"
+    tag      = "tags"
+    series   = "series"
+
+[languages]
+  [languages.en]
+    title = "Just Random Notes"
+    subtitle = "A simple theme for Hugo"
+    keywords = ""
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+    readOtherPosts = "Read other posts"
+
+    [languages.en.params.logo]
+      logoText = "Thinking, Fast and Slow"
+      logoHomeLink = "/"
+    # or
+    #
+    # path = "images/profile.jpg"
+    # alt = "Your example logo alt text"
+
+  # And you can even create generic menu
   [[menu.main]]
-  name = "Home"
-  identifier = "home"
-  weight = 100
-  url = "/"
-
+    identifier = "blog"
+    name       = "Blog"
+    url        = "/posts"
+  
   [[menu.main]]
-  name = "Posts"
-  weight = 200
-  identifier = "posts"
-  url = "/posts/"
-
-  [[menu.main]]
-  name = "About"
-  weight = 300
-  identifier = "about"
-  url = "/about/"
+    identifier = "about"
+    name       = "About"
+    url        = "/about/"
