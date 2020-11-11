@@ -2,10 +2,14 @@
 title: "My Python Dev Env setup"
 date: 2020-11-09T11:35:41-07:00
 draft: false
+toc: true
+tags:
+- Development
+- Python
 ---
 Making a note to jot down the tools I preferred to use when setting up Python development environment -- **there should be one-- and preferably only one --obvious way to do things**
 
-# Terminal/REPL/IDE
+## Terminal/REPL/IDE
 
 - zsh/oh-my-zsh [https://ohmyz.sh/](https://ohmyz.sh/)
   - plugins=(git history-substring-search zsh-autosuggestions)
@@ -14,7 +18,7 @@ Making a note to jot down the tools I preferred to use when setting up Python de
 - iPython/bpython
 - VsCode
 
-# Python environment management
+## Python environment management
 
 - Managing virtualenv — virtualenv/virtualenvwrapper or venv manages virtual environments for a specific Python version.
 - Managing multiple Python versions With pyenv
@@ -44,14 +48,14 @@ Making a note to jot down the tools I preferred to use when setting up Python de
         - `pyenv-virtualenv`: Plugin for pyenv and virtual environments
         - `pyenv-update`: Plugin for updating pyenv
 
-# Dependency management tools
+## Dependency management tools
 - Preferred: [Poetry](https://python-poetry.org/)
     - pyproject.toml and poetry.lock
 - pip install -r requirements.txt
 - [Pipenv](https://pipenv.pypa.io/en/latest/)
     - Pipfile and Pipfile.lock
 
-# Linting tools
+## Linting tools
 - Codes are read much longer time than being written       
 - [pre-commit](https://pre-commit.com/)
 
