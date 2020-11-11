@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Website of Derek Chang</title>
+    <link>https://example.com/posts/</link>
+    <description>Recent content in Posts on Website of Derek Chang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 09 Sep 2020 11:35:41 -0700</lastBuildDate><atom:link href="https://example.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dev Env Setup</title>
+      <link>https://example.com/posts/dev-env-setup/</link>
+      <pubDate>Wed, 09 Sep 2020 11:35:41 -0700</pubDate>
+      
+      <guid>https://example.com/posts/dev-env-setup/</guid>
+      <description>Unix Shell/Terminal/REPL/IDE  zsh/oh-my-zsh https://ohmyz.sh/ iterm2 ipython/bpython  jupyter notebook?   PyCharm/VSCODE  Python environment management   Managing virtualenv — virtualenv/virtualenvwrapper or venv manages virtual environments for a specific Python version.</description>
+    </item>
+    
+  </channel>
+</rss>
