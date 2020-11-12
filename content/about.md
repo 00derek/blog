@@ -17,7 +17,7 @@ A father, a husband, an athlete, a software engineer, a voracious reader
   - Optimize and balance ingestion and search performance of Elasticsearch
   - Simplified and streamlined deployment Ansible playbooks
   - SaaS offering cost reduction project
-- Lead initiatives to integrate unified Exabeam data processing pipeline with SaaS Data Lake offering
+- Lead unified Exabeam data processing pipeline integration project with Akka stream
 
 Tech stack includes: `Python`, `Ansible`, `mongoDB`, `Kafka`, `Elasticsearch`, `Scala`, `Akka`
 

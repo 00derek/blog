@@ -11,7 +11,7 @@ paginate     = 10
   dateformNumTime = "2006-01-02 15:04"
 
   # Subtitle for home
-  homeSubtitle = "Father // Husband // Athelete // Software engineer // Voracious reader"
+  homeSubtitle = "“Excellence is the gradual result of always wanting to do better.” Pat Riley"
 
   # Set disableReadOtherPosts to true in order to hide the links to other posts.
   disableReadOtherPosts = false
@@ -20,8 +20,8 @@ paginate     = 10
   enableSharingButtons = true
 
   # Metadata mostly used in document's head
-  description = "My new homepage or blog"
-  keywords = "homepage, blog"
+  description = "Derek Chang's blog"
+  keywords = "Derek, ChihWei Chang, blog"
   images = [""]
 
   # Default theme "light" or "dark"
@@ -72,7 +72,7 @@ paginate     = 10
 [languages]
   [languages.en]
     title = "Just Random Notes"
-    subtitle = "A simple theme for Hugo"
+    subtitle = "A collection of my random notes"
     keywords = ""
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
     readOtherPosts = "Read other posts"
