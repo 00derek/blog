@@ -13,9 +13,8 @@ A father, a husband, an athlete, a software engineer, a voracious reader
   - introduce data lifecycle management API for enabling Ops team and improved internal health checks
   - improved unit-testing coverage with styling enforcement and automation
   - improved documentation to help onboard new devs
-- Lead various resource management and stability improvement initiatives
-  - Optimize and balance ingestion and search performance of Elasticsearch
-  - Simplified and streamlined deployment Ansible playbooks
+- Lead various resource management and stability improvement initiatives that helps cost-cutting for the SaaS deployment, optimizing performance and stability of Data Lake
+- Simplified and streamlined deployment Ansible playbooks
 - Pilot unified Exabeam data processing pipeline integration project
 
 Tech stack includes: `Python`, `Ansible`, `mongoDB`, `Kafka`, `Elasticsearch`, `Scala`, `Akka`
