@@ -83,3 +83,11 @@ repos:
     hooks:
     -   id: flake8
 ```
+## Other interesting tools
+### icdiff and pytest-icdiff
+- icdiff: “Improved colored diff”
+  ```
+  pip install git+https://github.com/jeffkaufman/icdiff.git
+  git icdiff
+  git config --global icdiff.options '--highlight --line-numbers'
+  ```

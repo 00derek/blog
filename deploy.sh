@@ -1,5 +1,5 @@
 #!/bin/sh
-
+# test
 # If a command fails then the deploy stops
 set -e
 
