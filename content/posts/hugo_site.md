@@ -6,8 +6,6 @@ toc: true
 images:
 tags:
   - notes
-  - Hugo
-  - Github
 ---
 
 ## Github setup

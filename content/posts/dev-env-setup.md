@@ -4,8 +4,8 @@ date: 2020-11-09T11:35:41-07:00
 draft: false
 toc: true
 tags:
-- Development
-- Python
+- notes
+- python
 ---
 Making a note to jot down the tools I preferred to use when setting up Python development environment -- **there should be one-- and preferably only one --obvious way to do things**
 
