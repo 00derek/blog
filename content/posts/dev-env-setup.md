@@ -14,6 +14,7 @@ Making a note to jot down the tools I preferred to use when setting up Python de
 - zsh/oh-my-zsh [https://ohmyz.sh/](https://ohmyz.sh/)
   - plugins=(git history-substring-search zsh-autosuggestions)
   - theme: [power10k](https://github.com/romkatv/powerlevel10k)
+  - [Cheatsheet](https://github.com/ohmyzsh/ohmyzsh/wiki/Cheatsheet)
 - iTerm2
 - iPython/bpython
 - VsCode
