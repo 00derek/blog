@@ -50,7 +50,4 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 > sudo update-alternatives --list python
 > sudo update-alternatives --install /usr/bin/python python /usr/local/opt/python-3.9.2/bin/python3.9 1
 ```
-## To be continued
-### jupyter notebook
-### ELK
-### Kafka/KSQL
+## To Be Continued
