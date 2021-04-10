@@ -63,26 +63,31 @@ Making a note to jot down the tools I preferred to use when setting up Python de
 ```jsx
 repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v2.3.0
+    rev: v3.4.0
     hooks:
-    -   id: check-yaml
-    -   id: end-of-file-fixer
-    -   id: trailing-whitespace
-    -   id: check-merge-conflict
-    -   id: debug-statements
-- repo: https://github.com/miki725/importanize/
-    rev: 'master'
+    - id: check-yaml
+    - id: check-byte-order-marker
+    - id: end-of-file-fixer
+    - id: trailing-whitespace
+    - id: check-merge-conflict
+    - id: debug-statements
+    - id: name-tests-test
+    - id: check-builtin-literals
+    - id: no-commit-to-branch
+      args: [--branch, staging, --branch, master]
+-   repo: https://github.com/pycqa/isort
+    rev: 5.8.0
     hooks:
-    - id: importanize
-      args: [--verbose]
+      - id: isort
+        args: ["--profile", "black"]
 -   repo: https://github.com/psf/black
-    rev: 19.3b0
+    rev: 20.8b1
     hooks:
-    -   id: black
+    - id: black
 -   repo: https://gitlab.com/pycqa/flake8
-    rev: master
+    rev: 3.9.0
     hooks:
-    -   id: flake8
+    - id: flake8
 ```
 ## Other interesting tools
 ### icdiff and pytest-icdiff
